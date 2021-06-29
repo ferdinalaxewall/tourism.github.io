@@ -645,6 +645,16 @@ body{
     .owl-next{
         right: -10px;
     }
+
+    /* Navbar */
+
+    .navbar{
+        width: 100vw;
+    }
+
+    .navbar .navbar-brand{
+        font-size: 1em;
+    }
     
     /* Layanan */
     
