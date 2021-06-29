@@ -271,6 +271,11 @@ body{
     /* padding-bottom: calc(var(--nav-height)); */
 }
 
+.layanan .content-layanan{
+    position: relative;
+    z-index: 3;
+}
+
 .layanan .card{
     border-radius: var(--border-radius);
     overflow:hidden;
