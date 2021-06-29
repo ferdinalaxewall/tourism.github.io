@@ -51,7 +51,6 @@ body{
     padding-top: calc(var(--nav-height) + 1.5em);
     min-height: 100vh;
     max-width: 100vw;
-    overflow-x: hidden;
 }
 
 .content .content-title{
