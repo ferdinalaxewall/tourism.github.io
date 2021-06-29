@@ -657,9 +657,8 @@ body{
 
 @media (max-width: 575.98px) { 
     /* html{
-        /* overflow-x: hidden; */
-        /* scro */
-    /* }  */
+        scrollbar-color: red;
+     }  */
 
     .owl-prev{
         visibility: hidden;
