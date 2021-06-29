@@ -668,10 +668,13 @@ body{
         visibility: hidden;
     }
 
-    /* .float-btn{
-        bottom: 1.25em;
-        right: .5em;
-    } */
+    .float-btn{
+        bottom: .35em;
+        right: .35em;
+        width: 50px;
+        height: 50px;
+        font-size: 2.6em;
+    }
 
     /* Navbar */
 
@@ -717,11 +720,6 @@ body{
 }
 
 @media (max-width: 991.98px) {
-    
-    .float-btn{
-        bottom: .5em;
-        right: .5em;
-    }
     
     .owl-prev{
         left: -20px;
@@ -885,13 +883,3 @@ body{
 }
 
 
-
-/* Landscape Phone */
-
-@media (min-width: 768px) {
-    
-}
-
-/* Tablets */
-
-@media (min-width: 992px) { }
