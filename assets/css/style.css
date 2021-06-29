@@ -649,10 +649,10 @@ body{
         visibility: hidden;
     }
 
-    .float-btn{
+    /* .float-btn{
         bottom: 1.25em;
         right: .5em;
-    }
+    } */
 
     /* Navbar */
 
@@ -685,10 +685,10 @@ body{
 
 @media (max-width: 991.98px) {
     
-    /* .float-btn{
+    .float-btn{
         bottom: .5em;
         right: .5em;
-    } */
+    }
     
     .owl-prev{
         left: -20px;
