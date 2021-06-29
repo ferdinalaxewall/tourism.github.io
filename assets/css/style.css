@@ -440,6 +440,8 @@ body{
 .galeri .gallery-item img{
     border-radius: calc(var(--border-radius) - 0.5em);
     transition: all .3s ease;
+    height: 89.98px;
+    object-fit: cover;
 }
 
 .galeri .gallery-item img:hover{
@@ -488,7 +490,7 @@ body{
     background: var(--clr-second-background);
     position: relative;
     z-index: -2;
-    padding-bottom: 2em;
+    padding-bottom: 5em;
 }
 
 .kontak .content-title{
