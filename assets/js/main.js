@@ -47,31 +47,11 @@ $('.card-btn').click(function(){
     $(this).prev().toggle('.show');
 });
 
-// const cardBtn = document.getElementsByClassName('card-btn');
-// const cardDesc = document.getElementById('card-desc');
-
-// function btnFunction() {
-//     // // cardBtn.forEach(n => n.classList.remove('show'));
-//     // cardBtn.classList.toggle('show');
-//     $(this).addClass('show');
-//     // cardDesc.classList.toggle('show');
-//     // // cardDesc.forEach(n => n.classList.toggle('.show'));
-// };
-
-// cardBtn.forEach(n => n.addEventListener('click', showDesc));
-
-// const cardIndex = $('.card-btn').eq(index);
-
-// $('.card-btn').click(function(){
-//     // $(this).toggleClass('show');
-//     console.log(cardIndex);
-// });
-
-
 
 // Parallax
 
 $(window).scroll(function() {
+
      var wScroll = $(this).scrollTop();
 
      if (wScroll > 30) {
