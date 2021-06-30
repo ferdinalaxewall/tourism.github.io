@@ -13,24 +13,104 @@
         box-sizing: border-box;
     }
 
-    .kotak-1{
-        width: 100vw;
-        height: 30vh;
-        background: red;
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        max-width: 100vw;
+        min-height: 100vh;
+        overflow-x: hidden;
         position: relative;
     }
 
-    .kotak-2{
-        width: 100vw;
-        height: 10vh;
-        background: #000;
-        position: absolute;
-        transform: translateY(100%);
-        bottom: -10px;
+    ul{
+        list-style: none;
     }
+
+    a,a:hover,a:visited{
+        text-decoration: none;
+        color: #fafafa;
+    }
+
+    .nav{
+        width: 100vw;
+        height: 4em;
+        background-color: #3a3a3a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .nav ul li .nav-link{
+        font-size: 1.5em;
+    }
+
+    .nav ul li .nav-link.active{
+        color: yellow;
+    }
+
+    .konten{
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #konten1{
+        background: red;
+    }
+
+    #konten2{
+        background: cyan;
+    }
+
+    #konten3{
+        background: green;
+    }
+
+    .konten h1{
+        font-size: 5em;
+        color: #fafafa;
+    }
+
 </style>
 <body>
-    <div class="kotak-1"><div class="kotak-2"></div></div>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#konten1" class="nav-link active">konten1</a></li>
+            <li><a href="#konten2" class="nav-link">konten2</a></li>
+            <li><a href="#konten3" class="nav-link">konten3</a></li>
+        </ul>
+    </nav>
+
+    <section class="konten" id="konten1"><h1>isi konten</h1></section>
+    <section class="konten" id="konten2"><h1>isi konten</h1></section>
+    <section class="konten" id="konten3"><h1>isi konten</h1></section>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function() {
+
+        var wScroll = $(this).scrollTop();
+
+        if (wScroll > 30) {
+            $('.navbar').addClass('scroll');
+        }else{
+            $('.navbar').removeClass('scroll');
+        }
+        });
+    </script>
     
 </body>
 </html>

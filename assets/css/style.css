@@ -546,6 +546,18 @@ body{
     color: var(--clr-background);
 }
 
+/* Chrome, Safari, Edge, Opera */
+.kontak .content-kontak input::-webkit-outer-spin-button,
+.kontak .content-kontak input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.kontak .content-kontak input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .kontak .content-kontak .btn-form{
     background: var(--clr-primary-gr);
     border: none;
